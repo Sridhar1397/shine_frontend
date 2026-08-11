@@ -1,0 +1,53 @@
+.dt-wrap { display: flex; flex-direction: column; height: 100%; }
+
+.dt-toolbar {
+  display: flex; align-items: center; gap: 10px; padding: 14px 16px;
+  border-bottom: 1px solid var(--border); flex-wrap: wrap;
+}
+.dt-search {
+  display: flex; align-items: center; gap: 8px;
+  background: #F5F5F7; border: 1px solid var(--border); border-radius: 8px;
+  padding: 7px 12px; min-width: 220px; color: var(--text-secondary);
+}
+.dt-search input { border: none; background: transparent; outline: none; font-size: 13px; width: 100%; color: var(--text-primary); }
+.dt-select {
+  border: 1px solid var(--border); border-radius: 8px; padding: 7px 10px; font-size: 13px;
+  background: #fff; color: var(--text-primary);
+}
+.dt-toolbar-spacer { flex: 1; }
+.dt-export-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  border: 1px solid var(--border); background: #fff; border-radius: 8px;
+  padding: 7px 12px; font-size: 12.5px; font-weight: 600; color: var(--text-secondary);
+}
+.dt-export-btn:hover { color: var(--text-primary); background: #F5F5F7; }
+
+.dt-table-scroll { flex: 1; overflow: auto; }
+.dt-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.dt-table thead th {
+  position: sticky; top: 0; background: #FAFAFA; text-align: left;
+  padding: 10px 14px; font-weight: 600; color: var(--text-secondary);
+  border-bottom: 1px solid var(--border); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.dt-table tbody td {
+  padding: 11px 14px; border-bottom: 1px solid #F0F0F3; color: var(--text-primary);
+  white-space: nowrap; max-width: 260px; overflow: hidden; text-overflow: ellipsis;
+}
+.dt-table tbody tr:hover { background: #FCFAF3; }
+.dt-empty { text-align: center; padding: 40px !important; color: var(--text-secondary); white-space: normal !important; }
+.dt-dash { color: #C7C6CC; }
+.dt-thumb { width: 36px; height: 36px; border-radius: 6px; object-fit: cover; display: block; }
+.dt-actions-col { text-align: right; }
+.dt-actions { display: flex; gap: 6px; justify-content: flex-end; }
+
+.dt-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 16px; border-top: 1px solid var(--border); font-size: 12.5px; color: var(--text-secondary);
+}
+.dt-pagination { display: flex; align-items: center; gap: 10px; }
+.dt-pagination button {
+  width: 26px; height: 26px; border-radius: 6px; border: 1px solid var(--border); background: #fff;
+  display: inline-flex; align-items: center; justify-content: center; color: var(--text-secondary);
+}
+.dt-pagination button:disabled { opacity: 0.4; }

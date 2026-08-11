@@ -1,0 +1,41 @@
+.hero {
+  position: relative; min-height: 92vh; display: flex; align-items: center;
+  overflow: hidden; background: radial-gradient(circle at 30% 20%, var(--purple-soft), transparent 55%), var(--bg-black);
+}
+.hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0.4; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,9,16,0.5) 0%, rgba(10,9,16,0.85) 75%, var(--bg-black) 100%); }
+.hero-sparkles { position: absolute; inset: 0; overflow: hidden; }
+.hero-content { position: relative; z-index: 2; max-width: 720px; }
+.hero h1 { font-size: clamp(38px, 5.5vw, 64px); line-height: 1.1; margin-bottom: 20px; }
+.hero-desc { font-size: 16px; max-width: 540px; margin-bottom: 34px; }
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+.section-heading { text-align: center; max-width: 600px; margin: 0 auto 48px; }
+.section-heading h2 { font-size: clamp(28px, 3.5vw, 40px); }
+.section-cta { text-align: center; margin-top: 40px; }
+
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+
+.about-grid { display: flex; align-items: center; gap: 60px; }
+.about-media { flex: 1; }
+.about-media img { width: 100%; border-radius: var(--radius-lg); border: 1px solid var(--border-soft); aspect-ratio: 4/3; object-fit: cover; }
+.about-text { flex: 1; }
+.about-text h2 { margin-bottom: 16px; font-size: clamp(28px, 3.5vw, 38px); }
+.about-text > p { margin-bottom: 26px; }
+.about-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 28px; }
+.about-stat-value { font-family: var(--font-display); font-size: 30px; color: var(--gold-bright); }
+.about-stat-label { font-size: 12px; color: var(--text-muted); }
+
+.final-cta { text-align: center; background: linear-gradient(135deg, var(--purple), var(--bg-panel)); border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
+.final-cta-inner h2 { font-size: clamp(26px, 4vw, 38px); margin-bottom: 12px; }
+.final-cta-inner p { margin-bottom: 28px; }
+
+@media (max-width: 900px) {
+  .grid-3, .grid-2 { grid-template-columns: 1fr 1fr; }
+  .about-grid { flex-direction: column !important; gap: 32px; }
+}
+@media (max-width: 640px) {
+  .grid-3, .grid-2, .about-stats { grid-template-columns: 1fr; }
+  .hero { min-height: 80vh; }
+}

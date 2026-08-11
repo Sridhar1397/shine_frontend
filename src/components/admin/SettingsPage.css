@@ -1,0 +1,24 @@
+.sp-page { display: flex; flex-direction: column; gap: 16px; }
+.sp-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; }
+.sp-header h2 { font-size: 22px; }
+.sp-sub { font-size: 13px; color: var(--text-secondary); margin: 4px 0 0; }
+.sp-loading { padding: 60px; text-align: center; color: var(--text-secondary); }
+
+.sp-card { padding: 20px 22px; }
+.sp-section-title {
+  font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+  color: var(--accent-purple); margin-bottom: 14px;
+}
+.sp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.sp-span-2 { grid-column: span 2; }
+.sp-field label { display: block; font-size: 12.5px; font-weight: 600; margin-bottom: 6px; }
+.sp-field input[type="text"], .sp-field input[type="number"], .sp-field select, .sp-field textarea {
+  width: 100%; border: 1px solid var(--border); border-radius: 8px; padding: 9px 11px;
+  font-size: 13.5px; background: #FAFAFB;
+}
+.sp-field input:focus, .sp-field select:focus, .sp-field textarea:focus { outline: none; border-color: var(--accent-gold); background: #fff; }
+
+@media (max-width: 640px) {
+  .sp-grid { grid-template-columns: 1fr; }
+  .sp-span-2 { grid-column: span 1; }
+}

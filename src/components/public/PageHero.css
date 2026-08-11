@@ -1,0 +1,8 @@
+.page-hero {
+  position: relative; padding: 110px 0 60px; overflow: hidden;
+  background: radial-gradient(circle at 25% 30%, var(--purple-soft), transparent 55%), var(--bg-black);
+  border-bottom: 1px solid var(--border-faint);
+}
+.page-hero-sparkles { position: absolute; inset: 0; overflow: hidden; }
+.page-hero h1 { font-size: clamp(30px, 4.5vw, 46px); }
+.page-hero-sub { max-width: 560px; margin-top: 14px; font-size: 15px; }

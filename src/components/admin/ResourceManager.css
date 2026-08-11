@@ -1,0 +1,5 @@
+.rm-page { display: flex; flex-direction: column; gap: 18px; height: 100%; }
+.rm-header { display: flex; align-items: center; justify-content: space-between; }
+.rm-header h2 { font-size: 22px; }
+.rm-sub { font-size: 13px; color: var(--text-secondary); margin: 4px 0 0; }
+.rm-table-card { flex: 1; overflow: hidden; display: flex; flex-direction: column; min-height: 480px; }
